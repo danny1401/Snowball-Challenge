@@ -5,9 +5,9 @@
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./navbar.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Title</title>
+	<title>Memoriae</title>
 </head>
-	
+
 <!----------------------------------------------------------------------------------------------
 This website is a recreated version from one of Danny's previous projects.
 http://www.danny.informatikk4.net/Oppgaver/6%20-%20Elektrisk%20Sparkesykkel/index_ELSS.html
@@ -17,13 +17,14 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 ----------------------------------------------------------------------------------------------->
 
 <body>
-<img src="./tree1.jpg" id="mainbg"></img>
+<img alt="a-lone-tree-in-a-open-place" src="./tree1.jpg" id="bg3" class="mainbg"></img>
 <div class="topnav" id="myTopnav">
+	<center>
 	<a href="./index.html" id="home">Home</a>
 	<a href="./work.html">Our Work</a>
 	<a href="./goal.html">The Goal</a>
-	<a href="./pictures.html">Pictures</a>
-	<a id="name">Organisation</a>
+	<a id="name">Memoriae</a>
+	</center>
 
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<i class="fa fa-bars"></i>
@@ -31,19 +32,20 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 </div>
 <div id="info">.</div>
 <center>
-	<h1 id="maintitle">The Goal</h1>
-	<h1 id="info-title">Another Title</h1>
-	
+	<h1 id="maintitle1" class="maintitle">Reduce Demetia by 2040</h1>
+	<h1 id="info-title">Let's improve life!</h1>
+
 <div id="test-info">
 	<div id="side-info"><h1></h1></div>
 	<div id="left-info">
-		<div id="info-boks">
-			<center><h2>Title</h2></center>
-			Tekst
-		</div>	
+		<div class="info-boks" id="box3">
+			<center><h2>Our Goal</h2></center>
+			We want to give more people the chance to live a healthier and happier life. This could also be economical, since more people could stay in jobs they enjoy for longer.
+		</div>
 	</div>
 	<div id="right-info">
-		<img src="./bilde.jpg" id="info-bilde"></img>
+		<img src="./hands.jpeg" alt="holding-hands-together" class="info-bilde" id="bilde3"></img>
+		<!-- Image: https://images.pexels.com/photos/3830752/pexels-photo-3830752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" -->
 	</div>
 	<div id="side-info"><h1></h1></div>
 </div>
@@ -53,7 +55,7 @@ function myFunction() {
 var nav = document.getElementById("myTopnav");
 	if (nav.className === "topnav") {
 		nav.className += " responsive";
-	}		
+	}
 	else {
 		nav.className = "topnav";
 	}

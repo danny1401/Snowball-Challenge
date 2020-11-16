@@ -4,7 +4,7 @@ body {
 	background-color: whitesmoke;
 	font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-#mainbg {
+.mainbg {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -14,19 +14,21 @@ body {
 	border-bottom: 3px solid black;
 	z-index: -2;
 }
+#bg1 {top: -250px;}
+#bg2 {top: -250px;}
 
 /* INDEX */
-#maintitle {
+.maintitle {
 	position: relative;
 	top: 20.8vw;
-	max-width: 40%;
+	width: 60%;
 	padding: 15px 2vw;
 	color: white;
 	text-shadow: 0.18vw 0.18vw black;
 	background-color: #009900;
 	border: 2px solid black;
 	border-radius: 30px;
-	font-size: 4vw;
+	font-size: 3vw;
 }
 #info { position:absolute; top:49.667vw; opacity:0.1; }
 #plan { position:absolute; top:1340px; opacity:0.1; }
@@ -36,8 +38,8 @@ body {
 /* TITLE */
 #info-title {
 	position: relative;
-	top: 41.2vw;
-	width: 32vw;
+	top: 42vw;
+	width: 45vw;
 	padding: 13px 0;
 	color: white;
 	background-color: #009900;
@@ -47,54 +49,69 @@ body {
 }
 
 /* ABOUT US */
-#info-boks {
+.info-boks {
 	position: relative;
-	top: 41.8vw;
-	height: 26vw;
+	top: 42.8vw;
+	height: 20vw;
 	width: 34.7vw;
 	padding: 0.4vw 2.8vw;
 	background-color: #b3ffb3;
 	border: 2px solid black;
 	border-radius: 20px;
-	font-size: 1.4vw;
+	font-size: 1.5vw;
 	text-align: left;
-	line-height: 1;
-	margin-bottom: 3vw;
+	line-height: 1.8;
+	margin-bottom: 5vw;
 }
-#info-bilde {
+#box2 {height: 34.3vw; line-height: 2; font-size: 1.5vw;}
+	
+.info-boks h2 {
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+.info-bilde {
 	position: relative;
-	top: 41.8vw;
-	height: 26.8vw;
+	top: 42.8vw;
+	height: 20.8vw;
 	width: 40.3vw;
 	border: 2px solid black;
 	border-radius: 20px;
 	background-color: grey;
 }
+#bilde2 {height: 35vw;}
+	
 #left-info { position:relative; width:45%; float:left; margin-bottom: 50px;}
 #right-info { position:relative; width:45%; float:left; margin-bottom: 50px;}
 #side-info { position:relative; width:5%; float:left;}
 
 
-/* PICTURES */
-#image-sector { float:left; position:relative; top:41.2vw; margin-bottom: 5vw;}
-.image {
-	height: 26.8vw;
-	width: 40.3vw;
-	background-color: grey;
-	border: 2px solid black;
-	border-radius: 20px;
-	margin: 25px 25px;
-}
-
 @media only screen and (max-width:600px) {
   /* For mobile phones: */
 	#left-info, #right-info, #side-info { width:100%; }
-	#info-title { top: 47.6vw; }
-	#info-boks { top: 47.2vw; width:54.4vw; height: 37vw; margin-bottom: -2vw; font-size:2vw;}
-	#info-bilde { top: 46vw; width:60vw; height: 38.8vw; margin-bottom: 42vw;}
+	#info-title {top:66.5vw; font-size:4vw; width:67vw;}
+	.info-boks {
+		top: 65vw; 
+		width: 55.7vw; 
+		height: 42vw; 
+		padding: 1vw 7vw;
+		margin-bottom: -2vw; 
+		font-size:3.2vw;
+		line-height: 1.9;
+	}
+	#box1 {height: 35vw;}
+	#box2 {height: 68vw;}
+	#box3 {height: 47vw;}
 	
-	#image-sector { float:left; position:relative; top:48.2vw; margin-bottom: 8vw;}
-	.image { width:70vw; height:48.8vw; margin:15px 15px; }
+	.info-boks h2 {font-size:4vw; margin-top:2vw; margin-bottom:1vw;}
+	#title2 {font-size:3.5vw;}
 	
-	#maintitle { top: 29.1vw; }
+	.info-bilde { top: 62vw; width:70vw; height: 45.8vw; margin-bottom: 59vw;}
+	#bilde2 {height: 75vw;}
+
+	#bg1 {top: 50px;}
+	#bg2 {top: 50px;}
+	#bg3 {top: 80px;}
+	.maintitle {top:40.5vw; width:75vw; font-size:4vw;}
+	#maintitle1 {top:32vw;}
+
 }
